@@ -3,7 +3,7 @@
 
 #include <cmath>
 #include <cstdlib>
-#include <limits>
+#include <numeric>
 #include <algorithm>
 
 #include <string>
@@ -33,14 +33,7 @@ std::vector<int> GetPositionData(const char* file)
 
 int StepFuelCost(int distance)
 {
-	int stepCost = 0;
-
-	for(int i = 0; i <= distance; ++i)
-	{
-		stepCost += i;
-	}
-
-	return stepCost;
+	return distance * (distance + 1) / 2;
 }
 
 int GetFuelCost(const std::vector<int> crabPositions, int destinationPosition)
