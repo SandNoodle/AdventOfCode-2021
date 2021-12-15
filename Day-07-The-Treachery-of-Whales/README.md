@@ -1,4 +1,4 @@
-# Day 6: Lanternfish
+# Day 7: The Treachery of Whales
 
 ## Part I
 A giant `whale` has decided your submarine is its next meal, and it's much faster than you are. There's nowhere to run!
